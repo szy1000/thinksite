@@ -1,0 +1,43 @@
+// Core variables and mixins
+@import "variables";
+@import "mixins";
+@import "skel";
+
+// Skel Setting
+@include skel-breakpoints((
+  large: "(max-width: 623px)",
+  base:  "(max-width: 375px)",
+  small: "(max-width: 320px)"
+));
+
+
+.online{
+	.location{
+		padding: 10px 0; 
+		span{
+			padding: 0 10px;
+			font-family: $font-family-more;
+		}
+	}
+
+	.video-box{
+		.video{
+			width: 800px;
+			height: 400px;
+			background-color: blue;
+		}
+		.list{
+			width: 300px;
+			height: 400px;
+			overflow: auto;
+			li{
+				padding: 10px 0;
+				border-bottom: 1px solid #ccc;
+			}
+		}
+	}
+
+	.download{
+		padding: 10px 0;
+	}
+}

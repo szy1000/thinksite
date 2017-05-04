@@ -1,0 +1,47 @@
+// Core variables and mixins
+@import "variables";
+@import "mixins";
+
+.header{
+  height: 100px;
+  line-height: 100px;
+  .logo{
+  	display: block;
+  	margin-top: 25px;
+    width: 195px;
+    height: 48px;
+    background-image: url("images/logo.png");
+  }
+  .login{
+    li{
+    	float: left;
+    }
+    .divided{
+    	padding: 0 3px;
+    }
+  }
+}
+
+.links{
+	background-color: #eeeeee;
+	li{
+		float: left;
+		a{
+			display: block;
+			padding: 15px 20px;
+		}
+		&:hover,&.active{
+			background-color: $brand;
+			a{
+				color: #fff;
+			}		
+		}
+	}
+}
+ul{
+	margin: 0;
+	padding: 0;
+	li{
+		list-style-type: none;
+	}
+}
