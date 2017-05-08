@@ -38,6 +38,85 @@
 	}
 
 	.download{
-		padding: 10px 0;
+		.source,.note{
+			display: inline-block;
+			margin: 10px 0;
+			padding: 5px 10px;
+			border-radius: 5px;
+			color: $white;
+			background-color: $brand;
+			cursor: pointer;
+		}
+	}
+
+
+	.comment{
+		li{
+			padding:15px 0;
+			border-bottom:1px solid #ddd;
+			overflow: hidden;
+		}
+		.reply{
+			margin-top: 15px;
+			padding-top:15px;
+			border-top:1px solid #ddd;
+		}
+		.photo{
+			margin-top: 5px;
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			overflow: hidden;
+			img{
+				width: 100%;
+			}
+		}
+		.leave-message{
+			margin-left: 50px;
+			width: 100%;
+		}		
+		p{
+			margin: 0 0 5px 10px;
+			font-size: 14px;
+			&.name{
+				color: #ff0000;
+			}
+			&.msg{
+				color:#333;
+			}
+		}
+		span{
+			margin-left: 10px;
+			color: #999;
+			cursor: pointer;
+		}
+	}
+	.opinion{
+		.leave-message{
+			padding:40px 0;
+		}
+		.photo{
+			width: 87px;
+			height: 87px;
+			border-radius:50%;
+		}
+	}
+	form{
+		margin-left: 120px;
+		textarea{
+			padding:10px 5px;
+			width: 100%;
+			border:1px solid #ddd;
+			resize: none;
+		}
+		input{
+			margin-top: 20px;
+			height: 40px;
+			width: 95px;
+			border:none;
+			border-radius:5px;
+			color: #fff;
+			background-color:$brand;
+		}
 	}
 }

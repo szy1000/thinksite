@@ -3,5 +3,68 @@
 @import "mixins";
 
 .about{
-	text-align:center;
+  padding: 58px 50px 0px;
+  background: #fff;
+	.banner{
+    position: relative;
+    margin: 0 auto;
+		width: 778px;
+    height: 170px;
+    background: url(images/banner.png);
+    a{
+	    display: block;
+	    width: 147px;
+	    height: 107px;
+	    background: url(images/click.png);
+	    position: absolute;
+	    top: -37px;
+	    right: 57px;
+	    -webkit-animation: rock 2s linear infinite;
+	    animation: rock 2s linear infinite    	
+    }
+	}
+
+	.titleBig{
+		font-size: 30px;
+    color: #0d0409;
+    line-height: 120px;
+    margin-top: 30px;
+    text-align: center;
+	}
+	.subTitle{
+		color: #0d0409;
+    font-size: 22px;
+    height: 47px;
+    line-height: 47px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 45px;
+    i{
+	    display: block;
+	    width: 46px;
+	    height: 2px;
+	    background: #000;
+	    position: absolute;
+	    left: 50%;
+	    bottom: 0;
+	    margin-left: -23px;
+    }
+	}
+	.column{
+		padding-bottom: 75px;
+		&.shortLine{
+	    line-height: 24px
+		}
+		p{
+			margin-bottom: 15px;
+		}
+		dt{
+			font-size: 17px;
+		}
+		.dd{
+	    padding-left: 20px;
+	    color: #919191;
+	    font-size: 15px;
+		}
+	}
 }

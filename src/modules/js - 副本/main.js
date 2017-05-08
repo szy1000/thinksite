@@ -113,14 +113,17 @@ var Offcanvas ={
 //Drawer
 var Drawer = {
   init: function($,trigger){
-    require(['js/jquery.min','js/iscroll.min','js/drawer.min'],function($,trigger){
+    require(['js/jquery.min','js/iscroll','js/drawer.min'],function($,trigger){
       // alert(1);
+      $(document).click(function(){
+        alert(1);
+      })
       $(trigger).drawer();
     })
   }
 }
 
-exports.Drawer = Drawer;
+exports.Drawer =Drawer;
 exports.Offcanvas =Offcanvas;
 exports.Slide = Slide;
 exports.Slide2 = Slide2;

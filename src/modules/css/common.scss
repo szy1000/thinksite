@@ -25,7 +25,7 @@ html {
 
 body {
   position: relative;
-  font-size: $font-size-xlarge;
+  font-size: $font-size-large;
 }
 
 
@@ -158,5 +158,115 @@ html.retina-3{
     -webkit-transform:scaleY(.33);
     -webkit-transform-origin:0 0;
 
+  }
+}
+
+.panel{
+  margin-bottom: 30px;
+  .panel-header{
+    padding: 10px 0;
+    h3{
+      margin: 0;
+      padding-bottom: 5px;
+      border-bottom: 3px solid $brand;
+    }
+  }
+  .panel-content{
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .wrapper{
+    padding: 0 5%;
+    width: 100%;
+  }
+  .panel{
+    margin-bottom: 0;
+  }
+  .header{
+    height: auto;
+    line-height: 1;
+    .pull-left{
+      width: 100%;
+    }
+    .logo{
+      margin: 10px auto;
+    }
+    .login{
+      display: none;
+    }
+  }
+  .links{
+    .pc{
+      display: none;
+    }
+    .mobile{
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      p{
+        margin: 0;
+      }
+    }
+  }
+  .index{
+    .lesson{
+      width: 100%;
+      height: auto;
+      .lesson-info p{
+        height: auto;
+        opacity: 1;
+      }
+    }
+  }
+  //login page
+  .register-page,.login-page{
+    .loginBox{
+      padding: 10% 5%;
+      width: 96%;
+      height: auto;
+    }
+  }
+  //register
+
+  //video
+  .online{
+    .video-box{
+      .video{
+        width: 100%;
+        height: auto;
+      }
+      .list{
+        width: 100%;
+        height: 200px;
+      }
+    }
+    .comment{
+      .leave-message{
+        margin: 0;
+        padding-left: 42px;
+      }
+    }
+    .opinion{
+      .leave-message{
+        padding: 10px 0;
+      }
+      form{
+        margin-left: 87px;
+      }
+    }
+  }
+  //about
+  .about{
+    .banner{
+      display: none;
+    }
+  }
+  //contact
+  .contact{
+    .cont-form{
+      padding: 5%;
+      width: 96%;
+    }
   }
 }

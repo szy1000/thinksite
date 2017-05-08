@@ -47,7 +47,7 @@
 	}
 	.lesson-info{
 		position: relative;
-		z-index: 2;
+		z-index: 1;
 		padding: 10px;
 		background-color: #fff;
 		h3{
@@ -65,21 +65,6 @@
 			overflow: hidden;
 			transition:  ease-in 900ms;
 		}
-	}
-
-}
-
-.course-panel{
-	margin-bottom: 30px;
-	.panel-header{
-		padding: 10px 0;
-		h3{
-			margin: 0;
-			padding-bottom: 5px;
-			border-bottom: 3px solid $brand;
-		}
-	}
-	.panel-content{
 	}
 
 }

@@ -1,8 +1,8 @@
 <link rel="stylesheet" href="index.scss">
 
-<div class="index">
+<div class="index" role="main">
   <div class="today course wrapper">
-    <div class="course-panel">
+    <div class="panel">
       <div class="panel-header clearfix">
         <h3 class="pull-left">今日课程</h3>
       </div>
@@ -64,7 +64,7 @@
   </div>
   
   <div class="past course wrapper">
-    <div class="course-panel">
+    <div class="panel">
       <div class="panel-header clearfix">
         <h3 class="pull-left">往期课程</h3>
       </div>
@@ -128,6 +128,6 @@
 <script>
   var main = require('js/main');
 
-  main.Slide2.init();
-  main.Show.init('.annouce','.close','.overlay');
+  // main.Offcanvas.init('.drawer-toggle','.drawer-nav');
+  main.Drawer.init('.drawer');
 </script>
