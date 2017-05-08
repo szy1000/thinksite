@@ -175,7 +175,7 @@ html.retina-3{
   }
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 470px) {
   .wrapper{
     padding: 0 5%;
     width: 100%;
@@ -183,9 +183,14 @@ html.retina-3{
   .panel{
     margin-bottom: 0;
   }
+  
+
   .header{
     height: auto;
     line-height: 1;
+    .drawer-toggle{
+      display: block;
+    }
     .pull-left{
       width: 100%;
     }
@@ -201,6 +206,7 @@ html.retina-3{
       display: none;
     }
     .mobile{
+      display: block;
       height: 30px;
       line-height: 30px;
       text-align: center;
