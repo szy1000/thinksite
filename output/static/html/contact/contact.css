@@ -49,7 +49,7 @@
 .contact .cont-form li input[type=submit], .contact .cont-form li textarea[type=submit] {
   padding: 10px;
   color: #fff;
-  background-color: #f9a400;
+  background-color: #fda400;
 }
 
 .contact .cont-form li input:focus, .contact .cont-form li textarea:focus {

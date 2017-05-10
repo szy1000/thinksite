@@ -192,7 +192,7 @@ html, body {
 }
 
 .links li:hover, .links li.active {
-  background-color: #f9a400;
+  background-color: #fda400;
 }
 
 .links li:hover a, .links li.active a {

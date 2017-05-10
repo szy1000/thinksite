@@ -1365,7 +1365,7 @@ html.retina-3 ul.list-model li:after {
 .panel .panel-header h3 {
   margin: 0;
   padding-bottom: 5px;
-  border-bottom: 3px solid #f9a400;
+  border-bottom: 3px solid #fda400;
 }
 
 @media screen and (min-width: 320px) and (max-width: 470px) {
