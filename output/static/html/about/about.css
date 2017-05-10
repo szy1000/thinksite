@@ -1,0 +1,75 @@
+.about {
+  padding: 58px 50px 0px;
+  background: #fff;
+}
+
+.about .banner {
+  position: relative;
+  margin: 0 auto;
+  width: 778px;
+  height: 170px;
+  background: url(../../images/banner.png);
+}
+
+.about .banner a {
+  display: block;
+  width: 147px;
+  height: 107px;
+  background: url(../../images/click.png);
+  position: absolute;
+  top: -37px;
+  right: 57px;
+  -webkit-animation: rock 2s linear infinite;
+  animation: rock 2s linear infinite;
+}
+
+.about .titleBig {
+  font-size: 30px;
+  color: #0d0409;
+  line-height: 120px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.about .subTitle {
+  color: #0d0409;
+  font-size: 22px;
+  height: 47px;
+  line-height: 47px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 45px;
+}
+
+.about .subTitle i {
+  display: block;
+  width: 46px;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  margin-left: -23px;
+}
+
+.about .column {
+  padding-bottom: 75px;
+}
+
+.about .column.shortLine {
+  line-height: 24px;
+}
+
+.about .column p {
+  margin-bottom: 15px;
+}
+
+.about .column dt {
+  font-size: 17px;
+}
+
+.about .column .dd {
+  padding-left: 20px;
+  color: #919191;
+  font-size: 15px;
+}

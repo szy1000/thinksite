@@ -1,0 +1,19 @@
+.footer {
+  padding: 10px 0;
+  color: #fff;
+  text-align: center;
+  background-color: #000;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer p.contact {
+  margin-top: 3px;
+  font-size: 12px;
+}
+
+.footer a {
+  color: #fff;
+}
