@@ -7,22 +7,30 @@
 			<ul>
 				<li>
 					<i class="iconfont icon-tel"></i>
-					<input type="text" placeholder="请输入帐号">
+					<input type="text" placeholder="请输入手机号" id="tel">
+					<div class="tips">请输入正确的手机号</div>
 				</li>
 				<li>
 					<i class="iconfont icon-lock"></i>
-					<input type="password" placeholder="请输入登录密码">
+					<input type="password" placeholder="请输入登录密码" id="psd">
+					<div class="tips">密码输入错误</div>
 				</li>
 				<li>
 					<i class="iconfont icon-safe"></i>
 					<input class="validation" type="text" placeholder="请输入验证码">
+					<div class="tips">验证码错误</div>
 					<img src="images/code.jpg" alt="" width="80" height="35">
 					<a href="#">换一张</a>
 				</li>
 				<li>
-					<input type="submit" value="登录">
+					<input type="submit" disabled value="登录">
 				</li>
 			</ul>
 		</form>
 	</div>
 </div>
+
+<script>
+	var main = require('js/main');
+  main.CheckTel.init('input','#tel','#psd');
+</script>

@@ -189,3 +189,9 @@
   width: 1200px;
   margin: 0 auto;
 }
+
+//alpha
+@mixin opacity($value){
+  opacity: $value;
+  filter:alpha(opacity=$value);
+}

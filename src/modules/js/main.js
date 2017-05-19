@@ -110,6 +110,72 @@ var Offcanvas ={
   }
 }
 
+
+var CheckTel = {
+  init: function(ipt,tel,psd){
+    require(['zepto'],function($){
+      pass = 0;
+      var telReg = /^1(3|4|5|7|8)\d{9}$/;
+      var value = $(tel).value;
+      $(tel).keyup(function(){
+        if(this.value == ''){
+          pass = 0;
+          $(tel).siblings('.tips').removeClass('tips-in');
+          $(tel).removeClass('error');
+          return false;
+        }else{
+          if(telReg.test(this.value)){
+            pass = pass++;
+            $(tel).removeClass('error');
+            $(tel).siblings('.tips').removeClass('tips-in');
+          }else{
+            pass = 0;
+            $(tel).addClass('error');
+            $(tel).siblings('.tips').addClass('tips-in')
+          }
+        }
+      })
+
+      $(ipt).blur(function(){
+        if( $(ipt).eq(0).hasClass('error') &&
+            $(ipt).eq(1).hasClass('error') &&
+            $(ipt).eq(2).hasClass('error')  ){
+            $(ipt).eq($(ipt).length-1).removeClass('active');
+        } 
+
+        if( !$(ipt).eq(0).hasClass('error') ||
+           !$(ipt).eq(1).hasClass('error') ||
+            !$(ipt).eq(2).hasClass('error')  ){
+            $(ipt).eq($(ipt).length-1).removeClass('active');
+        } 
+
+        if(this.value == ''){
+          $(this).siblings('.tips').addClass('tips-in');
+          $(this).addClass('error');
+          return false;
+        } 
+        
+      })
+      $(ipt).focus(function(){
+        $(this).siblings('.tips').removeClass('tips-in');
+        $(this).removeClass('error');
+      })
+    })
+  }
+}
+
+var Test = {
+  init: function(el){
+    require(['zepto'],function($){
+      $(el).click(function(){
+        console.log(pass);
+      })
+    })
+  }
+}
+
+exports.Test = Test;
+exports.CheckTel = CheckTel;
 exports.Offcanvas =Offcanvas;
 exports.Slide = Slide;
 exports.Slide2 = Slide2;
