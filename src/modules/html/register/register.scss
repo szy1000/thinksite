@@ -35,11 +35,12 @@
 				top: 10px;
 				left: 15px;
 			}
-			input{
+			input,select{
 				padding:10px 10px 10px 40px;;
 				border:1px solid #ddd;
 				border-radius:5px;
 				width: 100%;
+				line-height: 0;
 				// border-radius:5px;
 				&.validation{
 					width: 50%;
@@ -49,6 +50,11 @@
 					color: #fff;
 					background-color:#3bb4f2;
 				}
+			}
+			select{
+				line-height: 1.5!important;
+				color: #757575;
+				@include form-control-focus(#ddd);
 			}
 		}
 	}
