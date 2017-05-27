@@ -26,7 +26,24 @@
 				top: 10px;
 				left: 15px;
 			}
-			input,select{
+			.select-area{
+			  position: relative;
+			  height: 40px;
+			  border: 1px solid #ddd;
+			  overflow: hidden;  
+			}
+			.select-value{
+				color: #777;
+			}
+			.select-area select{
+			  position: absolute;
+			  left: 0;
+			  top: 0;
+			  opacity: 0;
+			  width: 100%;
+			  border: red;
+			}
+			input,select,.select-area{
 				padding:10px 10px 10px 40px;;
 				border:1px solid #ddd;
 				border-radius:5px;

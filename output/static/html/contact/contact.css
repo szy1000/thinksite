@@ -1,0 +1,11 @@
+.contact .location{padding:10px 0}
+.contact .location span{padding:0 10px;font-family:"Hiragino Sans GB",SimSun}
+.contact .cont-form{margin:1% auto;padding:10px 30px;width:460px;border-radius:5px;background-color:#eee}
+.contact .cont-form h4{margin-top:0;font-weight:400}
+.contact .cont-form li{position:relative;margin-bottom:20px}
+.contact .cont-form li i{position:absolute;top:10px;left:15px}
+.contact .cont-form li input,.contact .cont-form li textarea{padding:10px 10px 10px 40px;border:1px solid #ddd;border-radius:5px;width:100%;transition:all .3s ease-in-out;-webkit-transition:all .3s ease-in-out;-moz-transition:all .3s ease-in-out;outline:0}
+.contact .cont-form li input.validation,.contact .cont-form li textarea.validation{width:50%}
+.contact .cont-form li input[type=submit],.contact .cont-form li textarea[type=submit]{padding:10px;color:#fff;background-color:#fda400}
+.contact .cont-form li input:focus,.contact .cont-form li textarea:focus{border:#35a5e5 1px solid;box-shadow:0 0 5px #51cbee;-webkit-box-shadow:0 0 5px #51cbee;-moz-box-shadow:0 0 5px #51cbee}
+.contact .cont-form li textarea{padding:10px;resize:none}

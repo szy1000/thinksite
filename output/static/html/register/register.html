@@ -1,0 +1,61 @@
+<link rel="stylesheet" href="register.css">
+
+<script>
+  var ua =  navigator.userAgent;
+
+</script>
+
+
+<div class="register-page"  id="contentWrapper">
+  <div class="loginBox">
+    <h3>欢迎注册欣才在线实训平台 </h3>
+    <form action="">
+      <ul>
+        <li>
+          <i class="iconfont icon-tel"></i>
+          <input type="text" placeholder="请输入帐号">
+        </li>
+        <li>
+          <i class="iconfont icon-class"></i>
+          <!-- <select name="" id="">
+            <option value="">请选择</option>
+            <option value="">请选择1</option>
+          </select> -->
+
+          <div class="select-area">
+            <span class="select-value"></span>
+            <select>
+              <option>甘肃</option>
+              <option>兰州</option>
+            </select>
+          </div>
+        </li>
+        <li>
+          <i class="iconfont icon-lock"></i>
+          <input type="password" placeholder="请输入登录密码">
+        </li>
+        <li>
+          <i class="iconfont icon-lock"></i>
+          <input type="password" placeholder="请确认登录密码">
+        </li>
+        <li>
+          <i class="iconfont icon-safe"></i>
+          <input class="validation" type="text" placeholder="请输入验证码">
+          <img src="../../images/code.jpg" alt="" width="80" height="35">
+          <a href="#">换一张</a>
+        </li>
+        <li>
+          <input type="submit" value="注册">
+        </li>
+      </ul>
+    </form>
+  </div>
+</div>
+
+<script>
+  var main = require('modules/js/main');
+
+  main.Slide2.init();
+  main.Show.init('.annouce','.close','.overlay');
+  main.Select.init();
+</script>

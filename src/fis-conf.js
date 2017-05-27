@@ -186,7 +186,7 @@ fis.match('*',{
 })
 
 // 发布产品库
-fis.media('prd')
+fis.media('prd-debug')
 .match('**.{es,js}', {
     optimizer: fis.plugin('uglify-js')
 })
