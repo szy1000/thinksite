@@ -163,7 +163,21 @@ var CheckTel = {
     })
   }
 }
-
+var Select = {
+  init: function(area,value){
+    require(['jquery.min.js'],function($){
+      $(".select-area .select-value").each(function(){
+        if( $(this).next("select").find("option:selected").length != 0 ){
+          $(this).text( $(this).next("select").find("option:selected").text() );
+        }
+      });
+      $(".select-area select").change(function(){
+        var value = $(this).find("option:selected").text();
+        $(this).parent(".select-area").find(".select-value").text(value);
+      });
+    })
+  }
+}
 var Test = {
   init: function(el){
     require(['zepto'],function($){
@@ -175,6 +189,7 @@ var Test = {
 }
 
 exports.Test = Test;
+exports.Select = Select;
 exports.CheckTel = CheckTel;
 exports.Offcanvas =Offcanvas;
 exports.Slide = Slide;

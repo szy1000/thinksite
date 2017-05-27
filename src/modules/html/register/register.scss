@@ -32,16 +32,33 @@
 			margin-bottom: 20px;
 			i{
 				position: absolute;
-				top: 10px;
+				top: 12px;
 				left: 15px;
 			}
-			input,select{
+			.select-area{
+			  position: relative;
+			  height: 40px;
+			  border: 1px solid #ddd;
+			  overflow: hidden;  
+			}
+			.select-value{
+				color: #777;
+			}
+			.select-area select{
+			  position: absolute;
+			  left: 0;
+			  top: 0;
+			  opacity: 0;
+			  width: 100%;
+			  border: red;
+			}
+
+			input,select,.select-area{
 				padding:10px 10px 10px 40px;;
 				border:1px solid #ddd;
 				border-radius:5px;
 				width: 100%;
-				line-height: 0;
-				// border-radius:5px;
+				-webkit-appearance: none;
 				&.validation{
 					width: 50%;
 				}
